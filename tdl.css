@@ -1,0 +1,96 @@
+/*latar*/
+body {
+    background-color: rgba(190, 211, 5, 0.315);
+}
+/* box to do list */
+h4 {
+    transform: translateX(76px);
+    margin: 10px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tdl {
+    display: inline-block;
+    background-color: rgb(250, 43, 43);
+    padding: 5px 5px;
+    border-radius: 5px;
+    width: 340px;
+}
+.tdl:hover{
+  box-shadow: 2px 2px 5px rgb(253, 95, 32);
+}
+/* tombol tambah tugas */
+#buat {
+    border: none;
+    border-radius: 5px;
+    background-color: bisque;
+    color: rgb(107, 18, 3);
+    width: 32px;
+    height: 22px;
+}
+#buat:hover {
+    box-shadow: 2px 2px 5px rgb(136, 1, 1);
+}
+#buat:active {
+    background-color: rgb(250, 172, 146);
+    color: rgb(236, 247, 247);
+}
+/* isi tugas */
+#isi{
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(117, 25, 2);
+    width: 300px;
+    height: 20px;
+}
+/* tugas baru */
+#list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+li{
+    display: flex;
+    align-items: center;
+    background: rgb(253, 224, 224);
+    border-radius: 5px;
+    margin:10px 0;
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+/* toombol selesai tugas */
+.check{
+    margin-right: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.selesai{
+    text-decoration: line-through;
+    color: gray;
+}
+/* tombol hapus */
+.hapus{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    margin-left: auto;
+    border: 1px solid rgb(134, 1, 1);
+    border-radius: 5px;
+    background-color: bisque;
+    color: rgb(107, 18, 3);
+    width: 25px;
+    height: 22px;
+    transform: translateX(-3px);
+}
+
+li:hover .hapus {
+    display: inline;
+    opacity: 1;
+    pointer-events: auto;
+}
+.hapus:hover{
+    box-shadow: 2px 2px 5px rgb(136, 1, 1);
+}
